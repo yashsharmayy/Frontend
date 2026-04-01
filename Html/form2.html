@@ -1,102 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
+  <head>
+    <title>form for school</title>
+    <style>
+      h1 {
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        text-align: center;
+      }
+    </style>
+    <body>
+      <h1>Fill the form for school id</h1>
+      <form>
+        <br />
+        <label for="firstname">enter your first name </label>
+        <input
+          type="text"
+          placeholder="enter your name "
+          id="firstname"
+          required
+        /><br />
 
+        <label for="lastname">enter your lastname</label>
+        <input
+          type="text"
+          placeholder="enter your lastname "
+          id="lastname"
+        /><br /><br />
 
-        <title> 
-            form for school 
-        </title>
-        <style>
-            h1{
-                font-size:20px ;
-                color: white;
-                background-color: black;
-                text-align: center;
+        <label for="password">enter your password</label>
+        <input
+          type="password"
+          placeholder="enter your password "
+          id="password"
+          required
+        /><br />
 
+        <label for="gander">gander:</label>
+        <input type="radio" id="male" value="male" name="gander" required />
+        <label for="male">male</label>
+        <input type="radio" id="female" value="female" name="gander" required />
+        <label for="female">female</label><br /><br />
 
-            }
+        <label for="emial">enter your email</label>
+        <input
+          type="email"
+          placeholder="enter your email "
+          id="email"
+          required
+        /><br />
 
+        <label for="age">enter your age</label>
+        <input
+          type="number"
+          placeholder="enter your age "
+          id="age"
+          required
+        /><br />
 
+        <label for="DOB">DOB</label>
+        <input type="date" id="DOB" required /><br /><br />
 
+        <label for="country">country:</label>
+        <select>
+          <option>india</option>
+          <option>USA</option>
+          <option>china</option>
+          <option>fracnce</option>
+          <option>russia</option></select
+        ><br /><br />
+        <label for="number">phone number</label>
+        <input
+          type="number"
+          placeholder="number "
+          id="number"
+          required
+        /><br /><br />
+        <label>address:</label>
+        <textarea placeholder="address" rows="5" cols="50"></textarea
+        ><br /><br />
+        <label for="photo">upload photo</label>
+        <input
+          type="file"
+          placeholder="upload photo"
+          id="photo"
+          required
+        /><br />
 
-        </style>
-        <body>
+        <label for="terms">terms and conditions</label>
+        <input
+          type="checkbox"
+          placeholder="terms and conditions"
+          id="terms"
+          required
+        /><br /><br />
 
-            <h1>Fill the form for school id </h1>
-            <form>
-                <br>
-                <label for="firstname">enter your first name </label>
-                <input type="text" placeholder="enter your name " id="firstname" required><br>
-
-                <label for="lastname">enter your lastname</label>
-                <input type="text" placeholder="enter your lastname " id="lastname" ><br><br>
-
-                <label for="password">enter your password</label>
-                <input type="password" placeholder="enter your password " id="password" required><br>
-
-                <label for="gander">gander:</label>
-                <input type="radio"  id="male" value="male" name="gander" required>
-                <label for="male">male</label>
-                <input type="radio"  id="female" value="female" name="gander" required>
-                <label for="female">female</label><br><br>
-
-
-                <label for="emial">enter your email</label>
-                <input type="email" placeholder="enter your email " id="email" required><br>
-
-                <label for="age">enter your age</label>
-                <input type="number" placeholder="enter your age " id="age" required><br>
-
-
-                <label for="DOB">DOB</label>
-                <input type="date" id="DOB" required><br><br>
-
-                <label for="country">country:</label> 
-                <select>
-                    <option>india</option>
-                    <option>USA</option>
-                    <option>china</option>
-                    <option>fracnce</option>
-                    <option>russia</option>
-
-                </select><br><br>
-                <label for="number">phone number</label>
-                <input type="number" placeholder="number " id="number" required><br><br>
-                <label>address:</label>
-                <textarea   placeholder="address" rows="5" cols="50"></textarea><br><br>
-                <label for="photo">upload photo</label>
-                <input type="file" placeholder="upload photo" id="photo" required><br>
-                
-                <label for="terms">terms and conditions</label>
-                <input type="checkbox" placeholder="terms and conditions" id="terms" required><br><br>
-
-                
-
-
-                <input type="submit"><br>
-                <input type="reset"><br>
-
-                
-                
-                
-
-
-                
-
-
-
-
-                
-
-
-
-
-
-
-
-
-            </form>
-
-        </body>
-    </head>
+        <input type="submit" /><br />
+        <input type="reset" /><br />
+      </form>
+    </body>
+  </head>
 </html>
