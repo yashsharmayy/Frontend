@@ -1,0 +1,223 @@
+.subscribe{
+
+    background-color:rgb(202, 11, 11) ;
+    color: white;
+    border-radius: 2px;
+    
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    margin-right: 7px;
+    transition: 0.3s;
+}
+.subscribe:hover{
+    opacity: 0.7;
+}
+.subscribe:active{
+    opacity: 0.5;
+}
+.join{
+
+    height: 30px;
+    border-radius: 2px;
+    color: rgb(23, 144, 237);
+    width: 50px;
+    border-color: rgb(23, 144, 237);
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin-right: 7px;
+    transition: 0.5s;
+    transition: background-color 0.5s;
+}
+.join:hover{
+    background-color:rgb(23, 144, 237);
+    color: white;
+}
+.join:active{
+    opacity: 0.7;
+}
+.tweet{
+
+    background-color: rgb(49, 164, 235);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    height: 30px;
+    width: 67px;
+    cursor: pointer;
+    margin-right: 7px;
+    transition: box-shadow 0.1s;
+
+}
+.tweet:hover{
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.tweet:active{
+    opacity: 0.7;}
+.boost{ 
+    height: 30px;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    border-color: rgb(151, 108, 215);
+    background-color:rgb(136, 92, 202);
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin-right: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+    transform:background-color 0.3;
+}
+.boost:hover{
+    background-color: rgb(121, 49, 189);
+}
+.boost:active{
+    opacity: 0.7;
+}
+.strap{
+    height: 30px;
+    border-radius: 2px;
+    color: rgb(108, 82, 125);
+    width: 100px;
+    border-color: rgb(108, 82, 125);
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin-right: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+    transform:background-color 0.3;
+
+}
+.strap:active{
+    opacity: 0.7;
+}
+.strap:hover{
+    background-color:rgb(108, 82, 125);
+    color: white;
+}
+
+.link{
+    height: 30px;
+    border-radius: 30px;
+    color: white;
+    width: 200px;
+    background-color: rgb(48, 139, 229);
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin-right: 7px;
+    font-weight: bold;
+    border: none;
+
+
+}
+.link:hover{
+    background-color: rgb(65, 79, 168);
+}
+.link:active{
+    opacity: 0.7;
+}
+.din{ 
+    height: 30px;
+    border-radius: 35px;
+    color: rgb(23, 144, 237);
+    width: 50px;
+    border-color: rgb(10, 102, 194);
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    margin-right: 7px;
+    font-weight: bold;
+
+
+}
+.din:hover{
+    background-color: rgba(0, 0, 255, 0.147);
+}
+.din:active{
+    opacity: 0.7;
+}
+.back{
+    padding: 5px;
+}
+.next{
+    padding: 5px;
+}
+.one{
+    margin-right: 3px;
+    margin-left: 3px;
+
+}
+.two{
+    padding: 3px;
+}
+.three{
+    padding: 3px;
+}
+.four{
+    padding: 3px;
+}
+.five{
+    padding: 3px;
+    margin-right: 3px;
+}
+.stretch{
+    padding: 5px;
+    margin-left: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+}
+.stretch:hover{
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.shadow{
+    padding: 5px;
+    margin-left: 4px;
+    background-color: green;
+    color: white;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.4);
+}   
+.shadow:active{
+    box-shadow:0px 0px 0px rgba(0, 0, 0, 0);
+    margin-top: 3px;
+    margin-left: 5px;
+
+    
+}
+.one1{
+    padding: 5px;
+    margin-left: 4px;
+    background-color: green;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 7px;
+    margin-right: 7px;
+    transition: padding 0.2s , margin 0.2s;
+}
+.one1:hover{
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: 0px;
+   margin-right: 0px;
+
+}
