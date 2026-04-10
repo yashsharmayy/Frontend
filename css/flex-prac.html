@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex-prac</title>
+    </head>
+    <body style="padding-bottom: 500px; padding-top: 75px;" >
+        <style>
+            button{
+                cursor: pointer;
+            }
+
+        .notifications{
+
+           border-color: rgb(200,200,200);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+           
+            width: 300px;
+           padding: 10px;
+           margin-bottom: 50px;
+
+        }
+        .noti-box{
+            
+            justify-content: space-between;
+            flex-direction: row;
+            
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 12px;
+            
+        }
+        .noti-box2{
+            background-color: rgb(40, 146, 239);
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+        .follow{
+            
+           
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: space-between;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            width:350px;
+            
+            align-items: center;
+        }
+        .picture{
+            width: 50px;
+            border-radius: 25px;
+            object-fit: cover;
+            height: 50px;
+        }
+        .about{
+            flex: 1;
+            margin-left: 10px;
+            margin-top: 0px;
+            
+        }
+        .name{
+            margin-top: 0px;
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+        .ditails{
+            font-size: 15px;
+            color: gray;
+            margin-top: 5px;
+        }
+        .span{
+            font-size: 13px;
+        }
+        .follow-button{
+            color: white;
+            padding: 7px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(45, 141, 252);
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        .search-download{
+            display: flex;
+            height: 50px;
+            justify-content: space-between;
+            background-color: rgb(161, 126, 195);
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        
+          
+        
+            
+        
+        .mid{
+            flex: 1;
+            margin-left: 35px;
+           
+           
+            margin-right: 35px;
+        }
+        .Home{
+            margin: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        .search-bar1{
+            background-color: white;
+            border-radius: 20px;
+            padding: 7px;
+            flex: 1;
+            border: none;
+            align-items: center;
+           padding-left: 20px;
+           width: 400px;
+          
+        }
+        .download-button{
+            
+            background-color: rgb(161, 126, 195);
+            color: white;
+            font-size: 16px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 2px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-right: 10px;
+        }
+        .a13{
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            height: 50px;
+        }
+        .a13-1{
+            background-color: pink;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item1{
+            background-color: black;
+            color: white;
+           
+        }
+        .item{
+            background-color: black;
+            color: white;
+            
+        }
+        .a13-2{
+           
+            background-color: skyblue;
+            width: 200px;
+            
+        }
+        .row1{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+        .center{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .gmail{
+            margin-top: 50px;
+            border-radius: 5px;
+            width: 400px;
+           margin-bottom: 50px;
+            
+           
+            
+            padding: 10px;
+            box-shadow:0 0 5px rgba(0, 0, 0, 0.25);
+
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        .head,.time,.inside{
+            margin-bottom: 24px;
+            font-size: 12px;
+            margin-left: 2px;
+            color: gray;
+        }
+        .inside{
+            margin-left: 0px;
+        }
+        .time{
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+       
+        .heading1{
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .main-body{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            height: 50px;
+        }
+        .mails{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            width: 350px;
+            
+        }
+        .profile-img{            
+            display: flex;
+           flex-direction: row;
+           width: 50px;
+           margin-bottom: 15px;
+           
+        }
+        .profile-img1{
+            width: 42px;
+            height: 42px;
+            border-radius: 25px;
+            margin-right: 7px;
+           
+        }
+        .twitter{
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+           
+            display: flex;
+            flex-direction: row;
+            
+
+        }
+        .profile-pic{
+            width: 75px;
+
+        }
+        .profile-pic1{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin: 7px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        .profile-name{
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        .color{
+            font-weight: normal;
+          
+            color: gray;
+        }
+        .comment{
+            margin-top: 7px;
+        }
+        .link{
+            display: flex;
+            flex-direction: row;
+            border-color: rgb(228, 228, 228);
+            border-style: solid;
+            border-width: 1px;
+            height: 100px;
+            border-radius: 15px;
+
+        }
+        .blank{
+            width: 100px;
+            background-color: rgb(228, 228, 228);
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .link1{
+            margin: 10px;
+        }
+        .app{
+            margin-top: 10px;
+            color: gray;
+            margin-bottom: 3px;
+        }
+        .request{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 56px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+           align-items: center;
+           font-family: Arial, Helvetica, sans-serif;
+           padding-top: 10px;
+           padding-right: 50px;
+           padding-left: 50px;
+           background-color:white;
+          
+
+        }
+        .req-pic{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-right: 10px;
+            margin-top: 8px;
+        }
+        
+        .left-req{
+            
+            display: flex;
+            flex-direction: row;
+
+        }
+        .req-name{
+            font-weight: bold;
+        }
+        .add-friend{
+            border: 0px;
+            color: white;
+            background-color: rgb(70, 151, 227);
+            padding: 7px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+        .Message{
+            border: 0px; 
+            background-color: rgb(224, 224, 224);
+            padding: 7px;
+            padding-left: 13px;
+            padding-right: 13px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 7px;
+
+        }
+        
+
+
+
+
+
+
+
+        </style>
+
+        <div class="request">
+           
+            <div class="left-req">
+                <img src="images/cat image.avif" class="req-pic">
+                <p class="req-name">Oliver Cat</p>
+            </div>
+            <div class="right-req">
+                <button class="add-friend"> Add Friend</button>
+                <button class="Message">Message</button>
+            </div>
+        </div>
+    
+
+
+        <div style="display: flex; flex-direction: row; margin-bottom: 50px;">
+            <div style="   background-color: skyblue; display: flex;width: 200px;"
+            >200px</div>
+            <div style="background-color: pink; display: flex;width: 75px;"
+            >75px</div>
+
+
+        </div>
+        <div style="display: flex; flex-direction: row; margin-bottom: 50px;">
+            <div style="   background-color: skyblue; display: flex;width: 50px;"
+            >item1</div>
+            <div style="background-color: pink; display: flex;flex: 1;"
+            >item2</div>
+            <div style="   background-color: skyblue; display: flex;width: 75px;"
+            >item3</div>
+
+
+        </div>
+        <div style="display: flex; flex-direction: row; margin-bottom: 50px;
+        justify-content: space-between;">
+           
+            <div style="background-color: pink; display: flex;justify-content: flex-start; "
+            >item2</div>
+            <div style="background-color: pink; display: flex;; "
+            >item2</div>
+            <div style="background-color: pink; display: flex;; "
+            >item2</div>
+            <div style="background-color: pink; display: flex;; "
+            >item2</div>
+            
+
+
+        </div >
+        <div style="border-style: solid;
+                margin-bottom: 50px;
+                width: 500px;
+                border-width: 1px;
+                height: 50px;
+                border-color:gray ;
+                flex-direction: row;
+                align-items: center; 
+                display: flex;
+                justify-content: space-between;"
+                >
+       
+       
+           
+            <div style="background-color: pink;"
+            >item2</div>
+            <div style="background-color: pink;"
+            >item2</div>
+            
+            
+
+        
+        
+        </div>
+        <div class="notifications">
+            <div class="noti-box">   
+                <div class="noti-box1">Home</div>
+                <div class="noti-box2">14</div>
+            </div>
+                <div class="noti-box">
+            <div class="noti-box1">Notifications</div>
+            <div class="noti-box2">3</div>
+            </div>
+            <div class="noti-box">
+            <div class="noti-box1">Messages</div>
+            <div class="noti-box2">5</div>
+                </div>
+           
+
+
+        </div>
+        <div class="follow">
+            <div class="profile-picture">
+                <img  class="picture" src="images/cat image.avif">
+
+            </div>
+            <div class="about">
+                <p class="name">Oliver</p>
+                <p class="ditails">The cat<br><span class="span">Populer</span></p>
+            </div>
+            <div >
+                <button class="follow-button">Follow</button>
+            </div>
+        </div>
+    <div class="follow">
+        <div class="profile-picture">
+            <img  class="picture" src="images/Dogs-improve-concentration-creativity.jpg">
+
+        </div>
+        <div class="about">
+            <p class="name">Mimi</p>
+            <p class="ditails">Sleepy dog<br><span class="span">Populer</span></p>
+        </div>
+        <div >
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="profile-picture">
+            <img  class="picture" src="images/bulldog-puppy.webp">
+
+        </div>
+        <div class="about">
+            <p class="name">Rex</p>
+            <p class="ditails">Happy Bulldog<br><span class="span">Populer</span></p>
+        </div>
+        <div >
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+    <div class="search-download">
+        <div class="left">
+            <p class="Home">Home</p></div>
+        <div class="mid">
+            <input type="text" placeholder="search" class="search-bar1">
+        </div>
+        <div class="right">
+            <button class="download-button">Download</button>
+            
+        </div>
+
+
+
+    </div>
+    <div class="a13">
+        <div class="a13-1"><div class="item">item1</div></div>
+        <div class="a13-2"></div>
+
+    </div>
+   
+    <div class="a13">
+       
+        <div class="a13-1">
+            
+        </div>
+
+        <div class="a13-2">
+            <div class="row1">row1</div>    
+           <div class="center">
+            <div class="item1">item1</div>
+            <div class="item1">item2</div>
+           </div>
+           <div class="row1">row1</div>    
+        </div>
+
+    </div>
+
+    <div class="gmail">
+        <div class="head">ALL INBOXES</div>
+        <div style="margin-bottom: 20px;">
+            <div class="main-body">
+                <div class="profile-img">
+                    
+                <img src="images/cat image.avif" class="profile-img1"> </div>
+            <div class="heading">
+                <div class="mails">
+                    <div class="heading1">Chewy Promotions<br> Biggest sales of the year!
+
+                    </div>
+                    <div class="time">4:58 PM</div>
+                </div>
+                <div class="inside ">Hey there! We're eiriting to tell you about our...</div>
+                
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <div class="main-body">
+            <div class="profile-img">
+                
+            <img src="images/Golden+Retrievers+dans+pet+care.jpeg" class="profile-img1"> </div>
+         <div class="heading">
+            <div class="mails">
+                <div class="heading1">Best Buy<br>Your Best Buy eReceipt
+
+                </div>
+                <div class="time">9:00 AM</div>
+               </div>
+               <div class="inside ">Thank you for shopping at bestbuy , here is...</div>
+               
+        </div>
+    </div>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <div class="main-body">
+            <div class="profile-img">
+                
+            <img src="images/Dogs-improve-concentration-creativity.jpg" class="profile-img1"> </div>
+         <div class="heading">
+            <div class="mails">
+                <div class="heading1">Netflix<br>Here's what's coming soon Netflix
+
+                </div>
+                <div class="time">12:32 PM</div>
+               </div>
+               <div class="inside ">Brand new movies and shows, old favoorites...</div>
+               
+        </div>
+    </div>
+    </div>
+  
+
+
+
+        
+        
+
+
+
+    </div>
+
+    <div class="twitter">
+        <div class="profile-pic">
+            <img src="images/cat image.avif" class="profile-pic1">
+
+        </div>
+        <div class="tweet">
+            <div>
+                <p  class="profile-name">supersimple.dev <span class="color">@SuperSimpleDev</span></p>
+                <p class="comment">What is backed web development? A complete <br> overview. New video is up!</p>
+            </div>
+            <div class="link">
+                <div class="blank"></div>
+                <div class="link1">
+                    <div class="app">youtube.com</div>
+                    <div class="discription">Backend web development-a <br>complete overview(2021)</div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+   
+
+    </body>
+</html>
