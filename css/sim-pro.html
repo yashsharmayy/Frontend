@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>simple-projects</title>
+    </head>
+    <body style="height: 3000px;">
+
+
+
+<style>
+
+
+
+    .stock{
+    
+        color: rgb(3, 162, 3);
+        font-size: large;
+        font-weight: bold;
+    }
+    .link{
+        color: blue;
+        transition: 0.3s;
+    
+    }
+    .link:hover{
+        color: brown;
+    }
+    .link:active{
+        opacity: 0.7;
+    }
+    .cart{
+        color: black;
+        background-color: rgba(253, 228, 37, 0.873);
+        margin: 10px;
+        border: none;
+        border-radius: 40px;
+        height: 40px;
+        width: 135px;
+        transition: 0.3s;
+        font-size: large;
+    
+    }
+    .cart:hover{
+        background-color: rgb(231, 207, 27);
+    
+    }
+    .cart:active{
+        opacity: 0.7;
+    }
+    .buy{
+        color: black;
+        background-color: rgba(252, 170, 37, 0.873);
+        margin: 10px;
+        border: none;
+        border-radius: 40px;
+        height: 40px;
+        width: 135px;
+        transition: 0.3s;
+        font-size: large;
+    
+    }
+    .buy:hover{
+        background-color: rgb(240, 159, 18);
+    
+    }
+    .buy:active{
+        opacity: 0.7;
+    }
+    .purchase{
+        margin-left: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline block;
+        margin-bottom: 50px;
+        
+    }
+    .huddi{
+        width: 250px;
+        height: 250px;
+        background-color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(237, 234, 234);
+        position: relative;
+        
+    }
+    
+    .off{
+        color: white;
+        position: absolute;
+        background-color: black;
+        font-size: 12px;
+        padding: 7px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        top: 5px;
+        right: 0px;
+        margin: 0px;
+        
+    }
+    .add-to-cart{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100px;
+        background-color:rgba(255, 255, 255, 0.8);
+        
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    
+        
+    }
+    .add-to-cart1{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        padding: 7px;
+        padding-left:15px;
+        padding-right: 15px;
+        font-size: 10px;
+        border: solid;
+        border-width: 1px;
+        position: absolute;
+        opacity: 1;
+        
+    }
+    .all-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        
+        column-gap: 16px;
+        row-gap:40px ;
+        }
+        .tumbnail-portion{
+        position: relative;
+        margin-bottom: 7px;
+        width: 100%;
+        }
+
+        .tumbnail{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        
+        
+
+            
+        }
+        .vidio-time{
+        position: absolute;
+        background-color: black;
+        padding: 5px;
+        font-size: 12px;
+        color: white;
+        opacity: 0.9;
+        border-radius: 2px;
+        bottom: 10px;
+        right: 8px;
+        font-weight: bold;
+
+        font-family: roboto,arial;
+        }
+        .channal-picture{
+        display: inline-block;
+        width: 50px;
+            
+        vertical-align: top;
+
+        }
+        .info{
+        display: inline-block;
+        width: 200px;
+        
+
+        }
+        .logo-head{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        }
+        .logo{
+        width: 40px;
+        border-radius: 50px;
+       
+        }
+
+        .heading{
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+        font-family: roboto,arial;
+        margin-bottom: 10px;
+        
+        vertical-align: middle;
+        margin-bottom: 10px;
+
+        }
+        .channal-name,.channal-name1{
+        font-size: 12px;
+        text-decoration: none;
+        font-family: roboto,arial;
+        color: rgb(96, 96, 96);
+        margin: 3px;
+        margin-bottom: 15px;
+        
+        }
+        .channal-name1{
+        margin-top: 15px;
+        
+
+        }
+        .logo-tip{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(255, 255, 255);
+            width: 230px;
+             opacity: 0;
+            font-family: roboto;
+            border-radius: 7px;
+            pointer-events: none;
+            box-shadow: 2px 3px 10px rgba(0, 0,0,0.3);
+           z-index: 300;
+           display: flex;
+           align-items: center;
+           transition: opacity 0.15s;
+        }
+        .logo-head:hover .logo-tip{
+            opacity: 1;
+        }
+        .logo-tip1-img{
+            width: 55px;
+            border-radius: 30px;
+            margin: 10px;
+            margin-top: 12px;
+            
+        }
+        .nam-sub{
+            display: flex;
+            flex-direction: column;
+        }
+        .logo-tip1-heading{
+            margin-bottom: 0px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .logo-tip1-sub{
+            margin-top: 5px;
+            font-family: Roboto, Arial;
+            color: rgb(96, 96, 96);
+            font-size: 14px;
+
+        }
+        
+
+
+
+
+
+
+         </style>
+
+        <div style="margin-bottom: 80px;"> 
+            <a class="link" href="https://www.amazon.in/ASIAN-Mexico-02-Casual-Sneaker-Shoes/dp/B0D3C663WC/ref=sr_1_12?dib=eyJ2IjoiMSJ9.SfWtxSCCWDg0ka7LfK7WZJbDkB3kdvIr5fpPS9wUX0pcVh2mjZq1nc4QuocHdvyFTIpJHEzc45O7jt7k3w8I2h7hYT1aXdLpuAP6UG8vV2OEMe3aQj2a53MWNH-G32Bnvj8AZ6wuPzGBkJxl7yMYPHKx9xDKIOjz90T8Iy1hAH6jH32_eg6rc3lvyIjwkYykYc0CfZEFntt_h8gMl51boIkB5ngMct2YNHre5V6p77wnltVr7Iv-GPN7VX2_K1LoTBrdsFMqscCgP13TkYF0vFM813Mgi626XqiNblTShQU.bRo2NKdU1-c3io9hijS7V12_XEv_Na23fbs2ZlcuPEE&dib_tag=se&keywords=shoes&qid=1730735132&sr=8-12" target="_blank"> Back to Amazon</a>
+            <h2>
+                ASIAN Men's Mexico-02 Casual Sneaker Shoes
+            </h2>
+            <p class="stock">₹689-in stock.</p>
+            <p style="font-size: large;">Free delivery tomorrow.</p>
+            <button class="cart">Add to cart</button>
+            <button class="Buy">Buy now</button>
+        </div>
+        <div class="purchase">
+            <div class="huddi" >
+                <img src="images/shopping.webp" class="huddi1">
+                <div class="off"> 20% OFF</div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart1"> Add to cart</button>
+                </div>
+               
+                
+            </div>
+
+        </div>
+        <div class="all-grid">
+        <div class="channal">
+            <div class="tumbnail-portion">
+               <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"> <img src="tumbnail/thumbnail-1.webp" class="tumbnail"></a>
+               <div class="vidio-time"> 14:20</div>
+             </div> 
+             <div class="logo-head">
+               <div class="channal-picture"><a href="https://www.youtube.com/c/mkbhd"> <img  class="logo" src="tumbnail/channel-1.jpeg" > </a>
+              
+                <div class="logo-tip">
+                        <img src="tumbnail/channel-1.jpeg" class="logo-tip1-img">
+                    
+                       <div class="name-sub">
+                        <div class="logo-tip1-heading"> Marques Brownlee</div>
+                        <div class="logo-tip1-sub"> 15M subscribers</div>
+                       </div>
+                </div>
+            </div>
+             
+      
+            
+               <div class="info">
+                 <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" class="heading"> Talking Tech and AI with Google CEO sunder Pichai! </a><br>
+                     
+                 <a href="https://www.youtube.com/c/mkbhd" class="channal-name1">Marques Brownlee</a>
+                 <p class="channal-name">3.4M views &middot;6 months ago</p>
+               </div>
+             </div>
+           </div>   
+            
+        
+          <div class="channal">
+           <div class="tumbnail-portion">
+             <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk"><img src="tumbnail/thumbnail-2.webp" class="tumbnail"></a>
+             <div class="vidio-time"> 8:22</div>
+            </div>
+            
+            
+           <div class="logo-head">
+           <div class="channal-picture"><a href="https://www.youtube.com/c/markiplier"> <img  class="logo" src="tumbnail/channel-2.jpeg" ></a>
+           
+           <div class="logo-tip">
+            <img src="tumbnail/channel-2.jpeg" class="logo-tip1-img">
+        
+           <div class="name-sub">
+            <div class="logo-tip1-heading"> Markiplier</div>
+            <div class="logo-tip1-sub"> 30M subscribers</div>
+           </div>
+        </div>
+      </div>
+    
+    
+          
+           <div class="info">
+             <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" class="heading"> Try Not To Laugh challenge #9</a><br>
+                 
+             <a href="https://www.youtube.com/c/markiplier" class="channal-name1">Markiplier</a>
+             <p class="channal-name">19M views &middot;4 years ago</p>
+           </div>
+         </div>
+        </div>
+    </div>
+
+
+    </body>
+</html>
+
+
+
+
