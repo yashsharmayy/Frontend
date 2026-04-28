@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>jspracc</title>
+  </head>
+  <body>
+    First number: <input type="number" id="num1" /><br />
+    Second number: <input type="number" id="num2" /><br />
+    <button onclick="calcul('+')">+</button>
+    <button onclick="calcul('-')">-</button>
+    <button onclick="calcul('*')">*</button>
+    <button onclick="calcul('/')">/</button>
+    <script>
+      function calcul(op) {
+        let x = Number(document.getElementById("num1").value);
+        let y = Number(document.getElementById("num2").value);
+        if (op == "+") {
+          alert(x + y);
+        }
+        if (op == "-") {
+          alert(x - y);
+        }
+        if (op == "*") {
+          alert(x * y);
+        }
+        if (op == "/") {
+          alert(x / y);
+        }
+      }
+    </script>
+  </body>
+</html>

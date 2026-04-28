@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>jspracc</title>
+    <style>
+      table,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function table() {
+        let num = Number(prompt());
+
+        document.write("<table>");
+        for (let i = 0; i < 11; i++) {
+          document.write("<tr>");
+          document.write("<td>" + num + "</td>");
+          document.write("<td>X</td>");
+          document.write("<td>" + i + "</td>");
+          document.write("<td>=</td>");
+          document.write("<td>" + i * num + "</td>");
+        }
+      }
+      table();
+    </script>
+  </body>
+</html>

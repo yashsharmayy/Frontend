@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>jspracc</title>
+    <style>
+      input {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student regstration form</h1>
+    <form action="" onsubmit="return validationform();">
+      Name: <input type="text" id="name" /><br />
+      Roll No:
+      <input type="number" id="rollno" /><br />
+      Email:
+      <input type="email" id="email" /><br />
+      DOB: <input type="date" id="dob" /><br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+    <script>
+      function validationform() {
+        let name = document.getElementById("name").value;
+        let rollno = document.getElementById("rollno").value;
+        let email = document.getElementById("email").value;
+        let dob = document.getElementById("dob").value;
+
+        if (name == "" || rollno == "" || email == "" || dob == "") {
+          alert("Input field must be filled...");
+          return false;
+        }
+
+        if (!validname(name)) {
+          alert("Name should be alphabet");
+          return false;
+        }
+        if (!validrollno(rollno)) {
+          alert("Roll no should be contain only 7 characters");
+          return false;
+        }
+        if (!validemail(email)) {
+          alert("Enter a valid email");
+          return false;
+        }
+        alert("form submitted successfully");
+        return true;
+      }
+
+      function validname(name) {
+        let pattern = /^[A-Za-z\s]+$/;
+        return pattern.test(name);
+      }
+      function validrollno(rollno) {
+        let pattern = /^[0-9]{7}$/;
+        return pattern.test(rollno);
+      }
+      function validemail(email) {
+        let pattern = /@/;
+        return pattern.test(email);
+      }
+    </script>
+  </body>
+</html>
