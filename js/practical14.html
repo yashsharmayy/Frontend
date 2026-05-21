@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Registration Form</title>
+
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      form {
+        width: 350px;
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px auto;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        margin: 8px 0;
+        padding: 6px;
+      }
+
+      .inline {
+        width: auto;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 8px;
+        width: 48%;
+      }
+    </style>
+
+    <script>
+      function validation() {
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let rollno = document.getElementById("rollno");
+        let dob = document.getElementById("dob");
+
+        if (rollno.value.length !== 7) {
+          alert("Enter valid 7-digit Roll No");
+          return false;
+        }
+        if (dob.value == "") {
+          alert("Enter DOB");
+          return false;
+        }
+
+        alert("Form submitted");
+      }
+    </script>
+  </head>
+
+  <body>
+    <form onsubmit="return validation();">
+      <h2>Student Registration</h2>
+
+      Name:
+      <input type="text" id="name" required />
+      Email:
+      <input type="email" id="email" />
+      Roll no:
+      <input type="number" id="rollno" required />
+      DOB:
+      <input type="date" id="dob" />
+      Address:
+      <textarea></textarea>
+
+      Course:
+      <select>
+        <option>BCA</option>
+        <option>BBA</option>
+        <option>B.Tech</option>
+        <option>MCA</option>
+      </select>
+
+      Gender:
+      <br />
+      <input type="radio" name="gender" class="inline" /> Male
+      <input type="radio" name="gender" class="inline" /> Female
+
+      <br /><br />
+
+      Hobbies:
+      <br />
+      <input type="checkbox" class="inline" /> Reading
+      <input type="checkbox" class="inline" /> Sports
+      <input type="checkbox" class="inline" /> Music
+
+      <br /><br />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
