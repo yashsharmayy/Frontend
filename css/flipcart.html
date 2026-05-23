@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipcart Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            
+            background-color: rgb(227, 227, 227);
+        }
+        
+        .header{
+            
+            display: flex;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            height: 65px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            z-index: 100;
+            background-color: white;
+            
+        }
+        .r-h{
+            display: flex;
+            
+            margin-right: 30px;
+        }
+        .m-h{
+            display: flex;
+            flex: 1;
+            
+            min-width: 400px;
+            
+            
+        }
+        .l-h{
+            display: flex;
+            flex: 1;
+            
+            margin-left: 30px;
+            
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            margin: 2px 10px 2px 10px;
+            
+            width: 100px;
+            justify-content: space-evenly;
+            font-size: 1.1rem;
+            cursor: pointer;
+            
+            
+        }
+        .Become{
+            width: 200px;
+        }
+        .tex{
+            margin: 0px 5px 0px 5px;
+        }
+        .search-bar{
+            width: 100%;
+            height: 35px;
+            background-color: rgb(217, 244, 255);
+            border-radius:  0 5px 5px 0;
+            border: none;
+        }
+        .search-bar:hover{
+            border: none;
+        }
+        .search-bar::placeholder{
+            font-size: 1.1rem;
+            padding: 10px;
+            color: rgb(82, 82, 82);
+
+        }
+        
+
+        .search-button{
+            font-size: 1.2rem;
+            width: 40px;
+            background-color: rgb(217, 244, 255);
+            height: 37px;
+            border-radius: 5px 0 0 5px;
+            margin-right: -2px;
+            border: none;
+            padding-left: 10px;
+        }
+        .head{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px;
+           background-color: white;
+            height: 150px;
+            margin-bottom: 15px;
+            
+        }
+        .all-sec{
+            
+            align-items: center;
+            height: 130px;
+            padding: 10px;
+            width: 100px;
+            display: block;
+            text-align: center;
+            margin: 0 5px 0 5px;
+        }
+        .all-sec p{
+            margin: 0;
+            margin-top: 5px;
+            font-size: 0.8rem;
+        }
+        .head1{
+            width: 100%;
+            background-color: white;
+        }
+        .head2{
+            margin: 10px;
+            background-color: white;
+            
+            padding: 5px;
+        }
+        .container{
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .mid-pic{
+            width: 100%;
+        }
+        .heading{
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px;
+        }
+        .item{
+            display: flex;
+            height: 230px;
+            justify-content: space-evenly;
+            padding-left: 11px;
+        }
+        .i2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+        .i-box{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(226, 223, 223);
+            border-radius: 4px;
+            padding: 2px;
+            align-items: center;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .ib{
+            width: 200px;
+            height: 200px;
+            margin-bottom:50px ;
+        }
+        
+        .i-img{
+            width: 170px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .i-img:hover{
+            width: 180px;
+            height: 155px;
+           
+        }
+        .i-box p{
+            margin: 2px;
+        }
+        .i-p2{
+            font-weight: bold;
+        }
+        .head3{
+            margin: 10px;
+            background-color: white;
+            padding: 5px;
+            width: 500px;
+            height: 600px;
+            
+        }
+        .footer{
+            margin-top: 20px;
+            background-color: rgb(205, 205, 205);
+            padding: 20px;
+            padding-left: 25px;
+        }
+        .m-line{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: rgb(117, 117, 117);
+        }
+        .sub-line{
+            font-size: 0.9rem;
+            
+            color: rgb(117, 117, 117);
+        }
+        .footer1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 20px;
+            justify-content: space-evenly;
+            background-color: rgb(31, 31, 31);
+            border-bottom: 1px solid gray;
+            
+        }
+        .about{
+            margin-bottom: 25px;
+        }
+        .about1{
+            color: rgb(106, 106, 106);
+            margin-top: 10px;
+        }
+        .about2{
+            color: white;
+            margin: 0;
+            font-size: 0.9rem;
+            font-weight: bold;
+
+        }
+        .footer2{
+            background-color: rgb(31, 31, 31);
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .foot-box{
+            display: flex;
+            align-items: center;
+            color: rgb(240, 194, 27);
+            font-size: 0.9rem;
+        }
+        .foot-box p{
+            color: white;
+            margin-left: 5px;
+        }
+        
+
+
+
+
+
+    </style>
+    <div class="header">
+        <div class="r-h">
+            <img src="images/fkheaderlogo_exploreplus-44005d.svg" class="r1" >
+        </div>
+        <div class="m-h">
+            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" class="search-bar" placeholder="Search for Product, Brands and More">
+        </div>
+        <div class="l-h">
+            <div class="box">
+                <i class="fa-regular fa-user"></i>
+                <p class="tex">Login</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="tex">Cart</p>
+            </div>
+            <div class="box Become">
+                <i class="fa-solid fa-store"></i>
+                <p class="tex">Become a Seller</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="head">
+        <div class="all-sec">
+            <img src="images/grocery.webp" class="all-sec-img">
+            <p>Grocery</p>
+        </div>
+        <div class="all-sec">
+            <img src="images/mobiles.webp" class="all-sec-img">
+            <p>Mobiles</p>
+        </div>
+        <div class="all-sec">
+            <img src="images/cerecters.png" class="all-sec-img">
+            <p>Fahion</p>
+        </div>
+        <div class="all-sec">
+            <img src="images/pc.png" class="all-sec-img">
+            <p>Electronics</p>
+        </div>
+        <div class="all-sec">
+            <img src="images/home.jpg" class="all-sec-img">
+            <p>Home & Furniture</p>
+        </div>
+        <div class="all-sec">
+            <img src="images/electronics.webp" class="all-sec-img">
+            <p>Appliances</p>
+        </div>
+        <div class="all-sec">
+            <img src="images/plan.webp" class="all-sec-img">
+            <p>Flight Bookings</p>
+        </div>
+        <div class="all-sec">
+            <img src="images/kids.png" class="all-sec-img">
+            <p>Beauty, Toy & More</p>
+        </div>
+        <div class="all-sec">
+            <img src="images/bike.png" class="all-sec-img">
+            <p>Two Wheelers</p>
+        </div>
+
+    </div>
+    <div class="head1">
+        <img src="images/big-plane.webp" class="mid-pic">
+    </div>
+    <div class="head2">
+        <div class="heading">
+            Best of Electronics
+        </div>
+        <div class="item">
+            <div class="i-box">
+                <img src="images/buds'.webp" class="i-img">
+                <p class="i-p1">Best truewireless buds</p>
+                <p class="i-p2">Grab Now</p>
+            </div>
+            <div class="i-box">
+                <img src="images/moniter.webp" class="i-img">
+                <p class="i-p1">Moniter</p>
+                <p class="i-p2">From $7949</p>
+            </div>
+            <div class="i-box">
+                <img src="images/projector.webp" class="i-img">
+                <p class="i-p1">Projector</p>
+                <p class="i-p2">From $6990</p>
+            </div>
+            <div class="i-box">
+                <img src="images/watch.webp" class="i-img">
+                <p class="i-p1">boAt Smartwatches</p>
+                <p class="i-p2">From $699</p>
+            </div>
+            <div class="i-box">
+                <img src="images/jeans.webp" class="i-img">
+                <p class="i-p1">Begyy jeans</p>
+                <p class="i-p2">From $799</p>
+            </div>
+            <div class="i-box">
+                <img src="images/pcrgb.webp" class="i-img">
+                <p class="i-p1">RGB pc</p>
+                <p class="i-p2">From $9999</p>
+            </div>
+            <div class="i-box">
+                <img src="images/beg.webp" class="i-img">
+                <p class="i-p1">Beg</p>
+                <p class="i-p2">From $399</p>
+            </div>
+        </div>   
+    </div>
+    <div class="container">
+        <div class="head3">
+            <div class="heading">
+                Best of Electronics
+            </div>
+            <div class="item i2">
+                <div class="i-box ib">
+                    <img src="images/buds'.webp" class="i-img">
+                    <p class="i-p1">best earbuds</p>
+                    <p class="i-p2">Grab Now</p>
+                </div>
+                <div class="i-box ib">
+                    <img src="images/moniter.webp" class="i-img">
+                    <p class="i-p1">Moniter</p>
+                    <p class="i-p2">From $7949</p>
+                </div>
+                <div class="i-box ib">
+                    <img src="images/projector.webp" class="i-img">
+                    <p class="i-p1">Projector</p>
+                    <p class="i-p2">From $6990</p>
+                </div>
+                <div class="i-box ib">
+                    <img src="images/watch.webp" class="i-img">
+                    <p class="i-p1">boAt Smartwatches</p>
+                    <p class="i-p2">From $699</p>
+                </div>
+            
+            </div>   
+        </div>
+        <div class="head3">
+            <div class="heading">
+                Best of Electronics
+            </div>
+            <div class="item i2">
+                <div class="i-box ib">
+                    <img src="images/buds'.webp" class="i-img">
+                    <p class="i-p1">best earbuds</p>
+                    <p class="i-p2">Grab Now</p>
+                </div>
+                <div class="i-box ib">
+                    <img src="images/moniter.webp" class="i-img">
+                    <p class="i-p1">Moniter</p>
+                    <p class="i-p2">From $7949</p>
+                </div>
+                <div class="i-box ib">
+                    <img src="images/projector.webp" class="i-img">
+                    <p class="i-p1">Projector</p>
+                    <p class="i-p2">From $6990</p>
+                </div>
+                <div class="i-box ib">
+                    <img src="images/watch.webp" class="i-img">
+                    <p class="i-p1">boAt Smartwatches</p>
+                    <p class="i-p2">From $699</p>
+                </div>
+            
+            </div>   
+        </div>
+        <div class="head3">
+            <div class="heading">
+                Best of Electronics
+            </div>
+            <div class="item i2">
+                <div class="i-box ib">
+                    <img src="images/buds'.webp" class="i-img">
+                    <p class="i-p1">best earbuds</p>
+                    <p class="i-p2">Grab Now</p>
+                </div>
+                <div class="i-box ib">
+                    <img src="images/moniter.webp" class="i-img">
+                    <p class="i-p1">Moniter</p>
+                    <p class="i-p2">From $7949</p>
+                </div>
+                <div class="i-box ib">
+                    <img src="images/projector.webp" class="i-img">
+                    <p class="i-p1">Projector</p>
+                    <p class="i-p2">From $6990</p>
+                </div>
+                <div class="i-box ib">
+                    <img src="images/watch.webp" class="i-img">
+                    <p class="i-p1">boAt Smartwatches</p>
+                    <p class="i-p2">From $699</p>
+                </div>
+            
+            </div>   
+        </div>
+    </div>   
+    <div class="footer">
+        <div class="m-line"> 
+            Flipcart plus
+        </div>
+        <p class="sub-line">
+            A world of limitless possibilites awaits you - Flipcart Plus was kickstarted as a loylty reward programme for all its regular customer at zero subscription fee. All you need is 500 supercoins to be a part of this survise . For every 100 rupees spent on Flipcart order , Plus memebers erns 4 supercoins & non-plus membwers eran 2 supercoins.Free delivery , erarly access during sales and shoping festivals , exchange offers and priuority customers servise are the top benifits to a Flispart Plus members . in short , earn more when you stop more!
+        </p>
+        <div class="m-line"> 
+            mobile Exchange offers 
+        </div>
+        <p class="sub-line">
+            Get an instant discount on the phone that you have been eyeing on . Exchange your old mobile for a new on eafter Flipcart experts calculate the value of you old phone , provide it is in a working condition without damage to the screen .If a phone is applicable for an exchange offer, you will see the the'Buy with Exchange' option on the product description of the phone . So , be smart,always opt for an exchange wherever possible . Terms and conditions apply.
+        </p>
+        <div class="m-line"> 
+            Fashions 
+        </div>
+        <p class="sub-line">
+            A world of limitless possibilites awaits you - Flipcart Plus was kickstarted as a loylty reward programme for all its regular customer at zero subscription fee. All you need is 500 supercoins to be a part of this survise . For every 100 rupees spent on Flipcart order , Plus memebers erns 4 supercoins & non-plus membwers eran 2 supercoins.Free delivery , erarly access during sales and shoping festivals , exchange offers and priuority customers servise are the top benifits to a Flispart Plus members . in short , earn more when you stop more!
+        </p>
+        <div class="m-line"> 
+            Appliances
+        </div>
+        <p class="sub-line">
+            A world of limitless possibilites awaits you - Flipcart Plus was kickstarted as a loylty reward programme for all its regular customer at zero subscription fee. All you need is 500 supercoins to be a part of this survise . For every 100 rupees spent on Flipcart order , Plus memebers erns 4 supercoins & non-plus membwers eran 2 supercoins.Free delivery , erarly access during sales and shoping festivals , exchange offers and priuority customers servise are the top benifits to a Flispart Plus members . in short , earn more when you stop more!
+        </p>
+    </div>
+    <div class="footer1">
+        <div class="about">
+            <p class="about1">ABOUT</p>
+            <p class="about2">Contact Us </p>
+            <p class="about2">Careers </p>
+            <p class="about2">About Us </p>
+            <p class="about2">Flipacrt stories</p>
+            <p class="about2">press</p>
+            <p class="about2">corporate information</p>
+        </div>
+        <div class="about">
+            <p class="about1">ABOUT</p>
+            <p class="about2">Contact Us </p>
+            <p class="about2">Careers </p>
+            <p class="about2">About Us </p>
+            <p class="about2">Flipacrt stories</p>
+            <p class="about2">press</p>
+            <p class="about2">corporate information</p>
+        </div>
+        <div class="about">
+            <p class="about1">ABOUT</p>
+            <p class="about2">Contact Us </p>
+            <p class="about2">Careers </p>
+            <p class="about2">About Us </p>
+            <p class="about2">Flipacrt stories</p>
+            <p class="about2">press</p>
+            <p class="about2">corporate information</p>
+        </div>
+        <div class="about">
+            <p class="about1">ABOUT</p>
+            <p class="about2">Contact Us </p>
+            <p class="about2">Careers </p>
+            <p class="about2">About Us </p>
+            <p class="about2">Flipacrt stories</p>
+            <p class="about2">press</p>
+            <p class="about2">corporate information</p>
+        </div>
+        <div class="about">
+            <p class="about1">ABOUT</p>
+            <p class="about2">Contact Us </p>
+            <p class="about2">Careers </p>
+            <p class="about2">About Us </p>
+            <p class="about2">Flipacrt stories</p>
+            <p class="about2">press</p>
+            <p class="about2">corporate information</p>
+        </div>
+        <div class="about">
+            <p class="about1">ABOUT</p>
+            <p class="about2">Contact Us </p>
+            <p class="about2">Careers </p>
+            <p class="about2">About Us </p>
+            <p class="about2">Flipacrt stories</p>
+            <p class="about2">press</p>
+            <p class="about2">corporate information</p>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="foot-box">
+            <i class="fa-solid fa-store"></i>
+            <p>Become a Seller</p>
+        </div>
+        <div class="foot-box">
+            <i class="fa-regular fa-star"></i>
+            <p>Advertise</p>
+        </div>
+        <div class="foot-box">
+            <i class="fa-solid fa-gift"></i>
+            <p>Gift cards</p>
+        </div>
+        <div class="foot-box">
+            <i class="fa-regular fa-circle-question"></i>
+            <p>Help Center</p>
+        </div>
+        <div class="foot-box">
+            <p> &copy; 2007-2025 Flipcart.com</p>
+        </div>
+        <div class="foot-box img">
+            <img src="images/Screenshot 2025-01-22 222047.png" class="foot-img">
+        </div>
+    </div>
+
+</body>
+</html>
