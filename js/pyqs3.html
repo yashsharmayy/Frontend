@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pyq3</title>
+  </head>
+  <body>
+    <script>
+      function changeColor() {
+        let color = document.getElementById("colors").value;
+        let body = document.body;
+        body.style.backgroundColor = color;
+      }
+    </script>
+    <h3>Select a Color:</h3>
+
+    <select id="colors" onchange="changeColor()">
+      <option value="">--Select--</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="purple">Purple</option>
+      <option value="yellow">Yellow</option>
+    </select>
+  </body>
+</html>
