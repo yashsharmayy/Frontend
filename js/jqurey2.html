@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jq2</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <p class="para1">this is para1</p>
+    <p id="para2">this is para2</p>
+    <input type="text" />
+    <p>this is para3</p>
+    <script>
+      $(".para1").click(function () {
+        $(this).css("color", "red");
+      });
+      $("#para2").dblclick(function () {
+        $(this).text("textchanged");
+      });
+      $("input").click(function () {
+        $(this).css("background-color", "yellow");
+      });
+    </script>
+  </body>
+</html>
